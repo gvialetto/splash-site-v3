@@ -1,5 +1,6 @@
 import '@fontsource/source-sans-pro/latin-400.css';
 import '@fontsource/source-sans-pro/latin-300.css';
+import '@fontsource/source-sans-pro/latin-700.css';
 import { useColor, getTextColor } from "./ColorProvider";
 
 export const Quote = (): JSX.Element => {
