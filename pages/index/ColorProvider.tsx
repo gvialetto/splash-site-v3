@@ -10,7 +10,6 @@ const colorClasses = new Map<string, colorClass>([
   ["blue", ["bg-blue-400", "text-blue-400"]],
   ["green", ["bg-green-600", "text-green-600"]],
   ["purple", ["bg-purple-600", "text-purple-600"]],
-  ["amber", ["bg-amber-500", "text-amber-500"]],
 ]);
 
 const colorClassWithDefault = (name: string): colorClass => {
