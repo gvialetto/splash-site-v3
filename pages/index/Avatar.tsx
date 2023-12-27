@@ -1,6 +1,7 @@
 import avatarUrl from './avatar.jpg'
 import { MouseEvent, TouchEvent } from "react";
 import { useColor, getBGColor } from "./ColorProvider";
+import "./Avatar.css"
 
 export const Avatar = (): JSX.Element => {
   const { color, setRandomColor } = useColor()!;
@@ -10,20 +11,17 @@ export const Avatar = (): JSX.Element => {
     setRandomColor();
   };
 
-  const classes = `
-    transition ease-in shadow-lg duration-300 shadow-black/35 mx-auto
-    rounded-full size-72 p-3 ${getBGColor(color)}
-  `;
-
   return (
-    <div className="mt-4">
+    <div className="mt-4 drop-shadow-xl">
+    <div className={`p-2 mask mask-decagon transition duration-300 ease-in ${getBGColor(color)}`}>
       <img
-        className={classes}
+        className="size-72 mask mask-decagon mx-auto"
         onMouseEnter={handleEvent}
         onTouchEnd={handleEvent}
         src={avatarUrl}
         alt="Personal photo"
       />
+    </div>
     </div>
   );
 };

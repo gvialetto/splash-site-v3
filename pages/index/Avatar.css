@@ -1,0 +1,9 @@
+.mask {
+    &-decagon {
+      mask-image: url("data:image/svg+xml,%3csvg width='192' height='200' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill='black' transform='rotate(12 100 100)' d='m96 0 58.779 19.098 36.327 50v61.804l-36.327 50L96 200l-58.779-19.098-36.327-50V69.098l36.327-50z' fill-rule='evenodd'/%3e%3c/svg%3e");
+    }
+
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
